@@ -64,7 +64,8 @@ paths.images = paths.app + "images/**/*";
 paths.svg = paths.app + "svg/**/*";
 paths.css_vendor = [
     paths.app + "styles/vendor/*.css",
-    paths.vendor + "intro.js/introjs.css"
+    paths.vendor + "intro.js/introjs.css",
+    paths.vendor + "dragula.js/dist/dragula.css"
 ];
 paths.locales = paths.app + "locales/**/*.json";
 
@@ -138,9 +139,8 @@ paths.coffee_order = [
 paths.libs = [
     paths.vendor + "bluebird/js/browser/bluebird.js",
     paths.vendor + "jquery/dist/jquery.js",
-    paths.vendor + "lodash/dist/lodash.js",
+    paths.vendor + "lodash/lodash.js",
     paths.vendor + "emoticons/lib/emoticons.js",
-    paths.vendor + "underscore.string/lib/underscore.string.js",
     paths.vendor + "messageformat/messageformat.js",
     paths.vendor + "angular/angular.js",
     paths.vendor + "angular-route/angular-route.js",
@@ -173,7 +173,8 @@ paths.libs = [
     paths.app + "js/jquery-ui.drag-multiple-custom.js",
     paths.app + "js/jquery.ui.touch-punch.min.js",
     paths.app + "js/tg-repeat.js",
-    paths.app + "js/sha1-custom.js"
+    paths.app + "js/sha1-custom.js",
+
 ];
 
 var isDeploy = argv["_"].indexOf("deploy") !== -1;

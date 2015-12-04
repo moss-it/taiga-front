@@ -566,7 +566,7 @@ init = ($log, $rootscope, $auth, $events, $analytics, $translate, $location, $na
 
     # Taiga Plugins
     $rootscope.contribPlugins = @.taigaContribPlugins
-    $rootscope.adminPlugins = _.where(@.taigaContribPlugins, {"type": "admin"})
+    $rootscope.adminPlugins = _.filter(@.taigaContribPlugins, {"type": "admin"})
 
     $rootscope.$on "$translateChangeEnd", (e, ctx) ->
         lang = ctx.language
@@ -577,7 +577,7 @@ init = ($log, $rootscope, $auth, $events, $analytics, $translate, $location, $na
         $rootscope.$evalAsync(cb)
 
     $events.setupConnection()
-    
+
     # Load user
     if $auth.isAuthenticated()
         user = $auth.getUser()
