@@ -30,7 +30,8 @@ nav.navbar(ng-if="vm.isEnabledHeader")
           ng-class="{active: vm.active}",
           title="{{'PROJECT.NAVIGATION.DASHBOARD_TITLE' | translate}}")
 
-            include ../../svg/dashboard.svg
+            svg.icon.icon-dashboard
+                use(xlink:href="#icon-dashboard")
 
         a(
             href="#",

@@ -52,7 +52,7 @@ $dropdown-width: 350px;
         color: $white;
         display: inline-block;
         transition: all .2s linear;
-        svg path {
+        svg {
             fill: darken($primary-dark, 8%);
         }
         &:hover {

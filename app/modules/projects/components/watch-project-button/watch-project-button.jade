@@ -6,7 +6,8 @@ a.track-button.watch-button.watch-container(
 )
     span.track-inner
         span.track-icon
-            include ../../../../svg/watch.svg
+            svg.icon.icon-watch
+                use(xlink:href="#icon-watch")
         span(ng-if="!vm.project.get('is_watcher')", translate="PROJECT.WATCH_BUTTON.WATCH")
         span(ng-if="vm.project.get('is_watcher')", translate="PROJECT.WATCH_BUTTON.WATCHING")
         span.icon.icon-arrow-up

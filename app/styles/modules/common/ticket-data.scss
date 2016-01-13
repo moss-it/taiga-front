@@ -115,7 +115,8 @@
     .ticket-watch-inner {
         display: flex;
     }
-    .track-icon {
+    svg {
+        margin-right: .25rem;
         position: relative;
         top: 2px;
     }
@@ -130,7 +131,7 @@
         text-align: center;
         text-transform: uppercase;
         transition: background .25s;
-        path {
+        svg {
             fill: $white;
         }
         &:hover {

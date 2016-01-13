@@ -13,7 +13,8 @@ form.single-attachment(
             download="{{::vm.attachment.getIn(['file', 'name'])}}"
         )
             span.icon
-                include ../../../svg/attachment.svg
+                svg.icon.icon-attachment
+                    use(xlink:href="#icon-attachment")
             span {{::vm.attachment.getIn(['file', 'name'])}}
 
     .attachment-comments(ng-if="!vm.attachment.get('editable') && vm.attachment.getIn(['file', 'description'])")

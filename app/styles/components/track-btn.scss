@@ -41,7 +41,7 @@
             background: rgba($primary-light, .2);
         }
         .track-icon {
-            path {
+            svg {
                 fill: $primary;
             }
         }
@@ -53,13 +53,9 @@
     .track-icon {
         padding: .3rem .6rem .3rem .75rem;
         svg {
-            height: 1.1rem;
+            fill: $grayer;
             position: relative;
             top: 2px;
-            width: 1.1rem;
-        }
-        path {
-            fill: $grayer;
         }
     }
     .track-button-counter {
@@ -79,7 +75,7 @@
                 color: $whitish;
                 transition: background .3s;
             }
-            path {
+            svg {
                 fill: $red-light;
             }
         }
@@ -155,7 +151,7 @@
             background: rgba($primary-light, .2);
             color: $primary;
             transition: all .3s;
-            path {
+            svg {
                 fill: $primary;
             }
         }
@@ -163,22 +159,18 @@
             background: $red;
             color: $whitish;
             svg {
+                fill: $red-light;
                 transform: rotate(180deg);
                 transition: all .3s;
-            }
-            path {
-                fill: $red-light;
             }
         }
     }
     svg {
+        fill: $gray-light;
         height: 1rem;
         width: 1rem;
     }
     span {
         display: block;
-    }
-    path {
-        fill: $gray-light;
     }
 }
