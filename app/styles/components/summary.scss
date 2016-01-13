@@ -171,10 +171,12 @@ $summary-background: $grayer;
     margin-bottom: 1rem;
     padding: 2rem 6rem;
     svg {
-        flex-basis: 5rem;
+        fill: $primary-dark;
+        flex-basis: 4rem;
         flex-shrink: 0;
-        margin-right: 1rem;
-        width: 5rem;
+        height: 4rem;
+        margin-right: 2rem;
+        width: 4rem;
     }
     p {
         margin: 0;
@@ -188,9 +190,6 @@ $summary-background: $grayer;
         color: $primary-dark;
         margin: 0;
         text-transform: uppercase;
-    }
-    path {
-        fill: $primary-dark;
     }
     a {
         @extend %bold;

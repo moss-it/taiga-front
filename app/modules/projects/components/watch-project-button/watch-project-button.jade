@@ -36,7 +36,8 @@ ul.watch-options(
         )
             span(translate="PROJECT.WATCH_BUTTON.OPTIONS.NOTIFY_ALL")
             span.watch-check(ng-if="vm.project.get('is_watcher') && vm.project.get('notify_level') == 2")
-                include ../../../../svg/check.svg
+                svg.icon.icon-check-empty
+                    use(xlink:href="#icon-check-empty")
     li
         a(
             href="",
@@ -46,7 +47,8 @@ ul.watch-options(
         )
             span(translate="PROJECT.WATCH_BUTTON.OPTIONS.NOTIFY_INVOLVED")
             span.watch-check(ng-if="vm.project.get('is_watcher') && vm.project.get('notify_level') == 1")
-                include ../../../../svg/check.svg
+                svg.icon.icon-check-empty
+                    use(xlink:href="#icon-check-empty")
 
     li(ng-if="vm.project.get('is_watcher')")
         a(

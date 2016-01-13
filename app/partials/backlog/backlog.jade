@@ -12,8 +12,8 @@ div.wrapper(tg-backlog, ng-controller="BacklogController as ctrl",
             include ../includes/components/summary
 
             div.empty-burndown(ng-if="showGraphPlaceholder")
-                div.graph-icon
-                    include ../../svg/graph.svg
+                svg.icon.icon-graph
+                    use(xlink:href="#icon-graph")
                 div.empty-text
                     p.title(translate="BACKLOG.CUSTOMIZE_GRAPH")
                     p {{'BACKLOG.CUSTOMIZE_GRAPH_TEXT' | translate}} #[a(href="", tg-nav="project-admin-project-profile-details:project=project.slug", title="{{'BACKLOG.CUSTOMIZE_GRAPH_TITLE' | translate}}") {{'BACKLOG.CUSTOMIZE_GRAPH_ADMIN' | translate}}]

@@ -46,7 +46,8 @@
                                         ng-if="project.get('is_private')"
                                         title="{{'PROJECT.PRIVATE' | translate}}"
                                     )
-                                        include ../../../svg/lock.svg
+                                        svg.icon.icon-lock
+                                            use(xlink:href="#icon-lock")
                                 p {{ ::project.get('description') | limitTo:300 }}
                                     span(ng-if="::project.get('description').length > 300") ...
 
