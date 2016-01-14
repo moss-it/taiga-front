@@ -152,14 +152,22 @@ $dropdown-width: 350px;
         &.see-more-projects-btn {
             margin-bottom: .3rem;
         }
+        &.import-project-button {
+            padding: .8rem 1rem;
+        }
         &.create-project-btn {
             flex: 1;
         }
-        &.import-project-button {
-            padding-left: .75rem;
-            padding-right: .75rem;
+    }
+    .import-project-button {
+        &:hover {
+            svg {
+                fill: $primary-light;
+            }
         }
-
+        svg {
+            fill: $white;
+        }
     }
     .create-options {
         display: flex;
