@@ -49,7 +49,7 @@
             @extend %title;
             @include ellipsis($width: 90%);
             display: inline-block;
-            margin-right: 3px;
+            margin-right: .5rem;
         }
     }
     .sprint {
@@ -63,22 +63,6 @@
             .icon-edit {
                 opacity: 1;
                 transition: opacity .2s ease-in;
-            }
-        }
-        .icon {
-            display: inline-block;
-        }
-        .icon-arrow-up {
-            transform: rotate(90deg);
-            transition: all .2s linear;
-            vertical-align: baseline;
-            &.active {
-                transform: rotate(180deg);
-                transition: all .2s linear;
-            }
-            &:hover {
-                color: $primary-light;
-                transition: color .2s linear;
             }
         }
         .icon-edit {
@@ -122,6 +106,20 @@
             display: inline-block;
             &:first-child {
                 margin-right: 3px;
+            }
+        }
+    }
+    .compact-sprint {
+        transform: rotate(0);
+        transition: all .2s;
+        &.active {
+            transform: rotate(90deg);
+            transition: all .2s;
+        }
+        &:hover {
+            .icon {
+                fill: $primary-light;
+                transition: color .2s;
             }
         }
     }
