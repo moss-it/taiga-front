@@ -12,25 +12,23 @@
     display: inline-flex;
     position: relative;
     .track-inner {
-        align-items: stretch;
+        align-items: center;
         background: $whitish;
         border-radius: 4px 0 0 4px;
         display: flex;
         flex: 1;
         flex-basis: 140px;
+        justify-content: flex-start;
         margin-right: .1rem;
         min-width: 140px;
         &:hover {
             background: darken($whitish, 5%);
             transition: background .3s;
         }
-        span {
-            align-self: center;
-        }
-        .icon-arrow-up {
-            margin-left: auto;
-            padding: 0 .5rem;
-            transform: rotate(180deg);
+        .icon-arrow-down {
+            height: .6rem;
+            margin: 0 .5rem 0 auto;
+            width: .6rem;
         }
     }
     &:hover {

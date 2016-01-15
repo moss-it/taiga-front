@@ -10,7 +10,8 @@ a.track-button.watch-button.watch-container(
                 use(xlink:href="#icon-watch")
         span(ng-if="!vm.project.get('is_watcher')", translate="PROJECT.WATCH_BUTTON.WATCH")
         span(ng-if="vm.project.get('is_watcher')", translate="PROJECT.WATCH_BUTTON.WATCHING")
-        span.icon.icon-arrow-up
+        svg.icon.icon-arrow-down
+            use(xlink:href="#icon-arrow-down")
 
     span.track-button-counter(
         title="{{ 'PROJECT.WATCH_BUTTON.COUNTER_TITLE'|translate:{total:vm.project.get(\"total_watchers\")||0}:'messageformat' }}",
