@@ -42,12 +42,8 @@
         color: $blackish;
         transition: color .2s linear;
     }
-    &:hover,
-    &.active {
-        span,
-        .icon {
-            color: $primary;
-        }
+    .icon {
+        margin-right: .5rem;
     }
     &:visited {
         color: $blackish;

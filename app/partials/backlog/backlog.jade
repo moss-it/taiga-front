@@ -30,7 +30,8 @@ div.wrapper(tg-backlog, ng-controller="BacklogController as ctrl",
                     title="{{'BACKLOG.MOVE_US_TO_CURRENT_SPRINT' | translate}}"
                     id="move-to-current-sprint"
                 )
-                    span.icon.icon-move
+                    svg.icon.icon-move
+                        use(xlink:href="#icon-move")
                     span.text(translate="BACKLOG.MOVE_US_TO_CURRENT_SPRINT")
                 a.trans-button.move-to-latest-sprint.move-to-sprint(
                     ng-if="!currentSprint"
@@ -38,7 +39,8 @@ div.wrapper(tg-backlog, ng-controller="BacklogController as ctrl",
                     title="{{'BACKLOG.MOVE_US_TO_LATEST_SPRINT' | translate}}"
                     id="move-to-latest-sprint"
                 )
-                    span.icon.icon-move
+                    svg.icon.icon-move
+                        use(xlink:href="#icon-move")
                     span.text(translate="BACKLOG.MOVE_US_TO_LATEST_SPRINT")
                 a.trans-button(
                     ng-if="userstories.length"
