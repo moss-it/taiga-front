@@ -47,12 +47,16 @@
             position: relative;
             transition: background .3s linear;
             transition-delay: .1s;
-            .icon-delete {
-                opacity: 1;
-                position: absolute;
-                right: 1rem;
-                top: 1.5rem;
-                transition: opacity .2s ease-in;
+        }
+        .remove-assigned-to {
+            fill: $grayer;
+            opacity: 1;
+            position: absolute;
+            right: 1rem;
+            top: 1.5rem;
+            transition: all .2s ease-in;
+            &:hover {
+                fill: $red;
             }
         }
     }

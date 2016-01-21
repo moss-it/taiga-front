@@ -113,7 +113,10 @@ a.button-gray {
     background: $primary;
     padding: .35rem .5rem;
     .icon {
+        fill: currentColor;
         margin-right: 0;
+        position: relative;
+        top: 1px;
     }
     &:hover {
         background: $primary-light;

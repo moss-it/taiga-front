@@ -139,8 +139,11 @@ $summary-background: $grayer;
         margin-right: 2rem;
     }
     .icon {
-        font-size: 1.4rem;
+        fill: currentColor;
+        height: 1.5rem;
         margin-right: .4rem;
+        vertical-align: middle;
+        width: 1.5rem;
         &.icon-stats {
             color: $primary;
             float: right;

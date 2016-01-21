@@ -80,14 +80,15 @@
         }
     }
     .icon-iocaine {
-        @extend %large;
         background: $black;
         border-radius: 5px;
-        color: $white;
+        fill: $white;
+        height: 1.75rem;
         left: .2rem;
-        padding: .1rem;
+        padding: .25rem;
         position: absolute;
         top: 1rem;
+        width: 1.75rem;
     }
     .task-assigned {
         @extend %small;
