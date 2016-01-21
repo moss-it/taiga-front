@@ -5,7 +5,8 @@
     a(ng-if="::isVisible", href="{{::taskboardUrl}}", title="{{'BACKLOG.GO_TO_TASKBOARD' | translate}}")
         span {{::name}}
 
-    a.icon.icon-edit(ng-if="::isEditable", href="", title="{{'BACKLOG.EDIT_SPRINT' | translate}}")
+    svg.icon.icon-edit(ng-if="::isEditable", href="", title="{{'BACKLOG.EDIT_SPRINT' | translate}}")
+        use(xlink:href="#icon-edit")
 
 .sprint-summary
     .sprint-date {{::estimatedDateRange}}
