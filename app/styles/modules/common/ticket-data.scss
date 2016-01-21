@@ -44,7 +44,10 @@
     @extend %normal;
     margin-bottom: 1rem;
     .icon {
+        color: currentColor;
+        height: .75rem;
         margin-left: .25rem;
+        width: .75rem;
     }
 }
 

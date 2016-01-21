@@ -63,7 +63,7 @@
     margin-top: 1rem;
     .user-list-single {
         &:hover {
-            .icon-delete {
+            .delete-watcher {
                 opacity: 1;
                 transition: opacity .2s ease-in;
             }
@@ -73,14 +73,16 @@
         flex: 1;
         position: relative;
     }
-    .icon-delete {
+    .delete-watcher {
+        cursor: pointer;
+        fill: currentColor;
         opacity: 0;
         position: absolute;
         right: .5rem;
         top: 0;
         transition: all .2s ease-in;
         &:hover {
-            color: $red;
+            fill: $red;
             transition: color .3s ease-in;
         }
     }
