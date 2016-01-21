@@ -497,11 +497,10 @@ EditableSubjectDirective = ($rootscope, $repo, $confirm, $loading, $qqueue, $tem
             else if event.keyCode == 27
                 $scope.$apply () => $model.$modelValue.revert()
 
-                $el.find('div.edit-subject').hide()
-                $el.find('div.view-subject').show()
+                $el.find('.edit-subject').hide()
+                $el.find('.view-subject').show()
 
-        $el.find('div.edit-subject').hide()
-        $el.find('div.view-subject span.edit').hide()
+        $el.find('.edit-subject').hide()
 
         $scope.$watch $attrs.ngModel, (value) ->
             return if not value
