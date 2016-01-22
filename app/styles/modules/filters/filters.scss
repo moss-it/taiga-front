@@ -8,12 +8,16 @@
             vertical-align: baseline;
         }
     }
-    h2 {
+    .breadcrumb {
         @extend %large;
         margin-top: 1rem;
         .icon-arrow-right {
-            @extend %medium;
+            @include svg-size(.7rem);
+            margin: 0 .25rem;
             vertical-align: middle;
+        }
+        .back {
+            color: $gray-light;
         }
     }
     input {
@@ -93,7 +97,7 @@
         }
     }
     .icon {
-        color: $grayer;
+        fill: currentColor;
         float: right;
         opacity: 0;
         transition: opacity .2s ease-in;

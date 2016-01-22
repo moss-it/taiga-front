@@ -20,35 +20,43 @@ section.filters
                     li
                         a(href="", title="{{ 'ISSUES.FILTERS.CATEGORIES.TYPE' | translate}}", data-type="types")
                             span.title(translate="ISSUES.FILTERS.CATEGORIES.TYPE")
-                            span.icon.icon-arrow-right
+                            svg.icon.icon-arrow-right
+                                use(xlink:href="#icon-arrow-right")
                     li
                         a(href="", title="{{ 'ISSUES.FILTERS.CATEGORIES.STATUS' | translate}}", data-type="status")
                             span.title(translate="ISSUES.FILTERS.CATEGORIES.STATUS")
-                            span.icon.icon-arrow-right
+                            svg.icon.icon-arrow-right
+                                use(xlink:href="#icon-arrow-right")
                     li
                         a(href="", title="{{ 'ISSUES.FILTERS.CATEGORIES.SEVERITY' | translate}}", data-type="severities")
                             span.title(translate="ISSUES.FILTERS.CATEGORIES.SEVERITY")
-                            span.icon.icon-arrow-right
+                            svg.icon.icon-arrow-right
+                                use(xlink:href="#icon-arrow-right")
                     li
                         a(href="", title="{{ 'ISSUES.FILTERS.CATEGORIES.PRIORITIES' | translate}}", data-type="priorities")
                             span.title(translate="ISSUES.FILTERS.CATEGORIES.PRIORITIES")
-                            span.icon.icon-arrow-right
+                            svg.icon.icon-arrow-right
+                                use(xlink:href="#icon-arrow-right")
                     li
                         a(href="", title="{{ 'ISSUES.FILTERS.CATEGORIES.TAGS' | translate}}", data-type="tags")
                             span.title(translate="ISSUES.FILTERS.CATEGORIES.TAGS")
-                            span.icon.icon-arrow-right
+                            svg.icon.icon-arrow-right
+                                use(xlink:href="#icon-arrow-right")
                     li
                         a(href="", title="{{ 'ISSUES.FILTERS.CATEGORIES.ASSIGNED_TO' | translate}}", data-type="assignedTo")
                             span.title(translate="ISSUES.FILTERS.CATEGORIES.ASSIGNED_TO")
-                            span.icon.icon-arrow-right
+                            svg.icon.icon-arrow-right
+                                use(xlink:href="#icon-arrow-right")
                     li
                         a(href="", title="{{ 'ISSUES.FILTERS.CATEGORIES.CREATED_BY' | translate}}", data-type="createdBy")
                             span.title(translate="ISSUES.FILTERS.CATEGORIES.CREATED_BY")
-                            span.icon.icon-arrow-right
+                            svg.icon.icon-arrow-right
+                                use(xlink:href="#icon-arrow-right")
                     li.custom-filters(ng-if="filters.myFilters.length")
                         a(href="", title="{{ 'ISSUES.FILTERS.CATEGORIES.CUSTOM_FILTERS' | translate}}",
                           data-type="myFilters")
                             span.title(translate="ISSUES.FILTERS.CATEGORIES.CUSTOM_FILTERS")
-                            span.icon.icon-arrow-right
+                            svg.icon.icon-arrow-right
+                                use(xlink:href="#icon-arrow-right")
 
         div.filter-list.hidden
