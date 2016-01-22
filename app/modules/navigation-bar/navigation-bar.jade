@@ -38,7 +38,8 @@ nav.navbar(ng-if="vm.isEnabledHeader")
             tg-nav="discover",
             title="{{'PROJECT.NAVIGATION.DISCOVER_TITLE' | translate}}",
         )
-            include ../../svg/discover.svg
+            svg.icon.icon-discover
+                use(xlink:href="#icon-discover")
 
         div.topnav-dropdown-wrapper(ng-show="vm.projects.size", tg-dropdown-project-list)
         //- div.topnav-dropdown-wrapper(tg-dropdown-organization-list)
