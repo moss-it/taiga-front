@@ -43,8 +43,8 @@
             <title>add</title>
             <path class="path1" d="M480 0v480h-480v64h480v480h64v-480h480v-64h-480v-480h-64z"></path>
         </symbol>
-        <symbol id="icon-backlog" viewBox="0 0 1024 1024">
-            <title>backlog</title>
+        <symbol id="icon-scrum" viewBox="0 0 1024 1024">
+            <title>scrum</title>
             <path class="path1" d="M0 0v1024h1024v-1024h-960zM64 64h416v896h-416zM544 64h416v252.16h-416zM544 380.16h416v273.92h-416zM544 718.080h416v241.92h-416z"></path>
         </symbol>
         <symbol id="icon-bulk" viewBox="0 0 1024 1024">

@@ -14,7 +14,9 @@
         display: inline-block;
         margin-left: .25rem;
         position: relative;
-        .icon-arrow-bottom {
+        vertical-align: text-bottom;
+        .icon-arrow-down {
+            fill: currentColor;
             margin-left: .25rem;
         }
     }
